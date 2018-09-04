@@ -11,7 +11,7 @@ export default class Card extends React.Component {
 
     return(
       <div className='card'>
-        <img className='card-image'/>
+        <img className='card-image' alt={ animal.name }/>
         <div className='card-name'>{ animal.name }</div>
         <div className='card-information'>
           <span className='size'>{animal.size}</span>
