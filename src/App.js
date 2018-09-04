@@ -31,13 +31,15 @@ class App extends Component {
     return (
       <div className='come-home'>
         hello 宠回家
-        {
-          this.state.animals.map(function(animal) {
-            return(
-              <Card key={animal.id} animal={animal}/>
-            )
-          })
-        }
+        <div className='animal-cards'>
+          {
+            this.state.animals.map(function(animal) {
+              return(
+                <Card key={animal.id} animal={animal}/>
+              )
+            })
+          }
+        </div>
       </div>
     );
   }
