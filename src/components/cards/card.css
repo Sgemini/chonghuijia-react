@@ -11,3 +11,18 @@
   width: 100%;
   height: 70%;
 }
+
+/* mobile style */
+/* @media screen and (min-width: 320px) and (max-width: 480px){
+  .card {
+    color: red;
+  }
+} */
+
+/* desktop style */
+@media only screen and (min-width: 481px) {
+  .card {
+    width: 32%;
+    margin-right: 10px;
+  }
+}
