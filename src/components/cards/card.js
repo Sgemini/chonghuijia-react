@@ -1,5 +1,6 @@
 import React from 'react';
 import './card.css';
+import logo from '../../images/logo.jpeg';
 
 export default class Card extends React.Component {
   // constructor(props) {
@@ -11,7 +12,7 @@ export default class Card extends React.Component {
 
     return(
       <div className='card'>
-        <img className='card-image' alt={ animal.name }/>
+        <img className='card-image' alt={ animal.name } src={ logo }/>
         <div className='card-name'>{ animal.name }</div>
         <div className='card-information'>
           <span className='size'>{animal.size}</span>
