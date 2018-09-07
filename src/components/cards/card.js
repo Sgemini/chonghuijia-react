@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './card.css';
 import logo from '../../images/logo.jpeg';
 
-export default class Card extends React.Component {
+export default class Card extends Component {
   // constructor(props) {
   //   super(props);
   // }

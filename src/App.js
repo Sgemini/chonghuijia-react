@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Card from './components/cards/card.js';
+import Head from './components/head/head.js';
 
 class App extends Component {
   constructor() {
@@ -30,7 +31,7 @@ class App extends Component {
   render() {
     return (
       <div className='come-home'>
-        hello 宠回家
+        <Head />
         <div className='animal-cards'>
           {
             this.state.animals.map(function(animal) {
