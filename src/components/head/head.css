@@ -1,4 +1,52 @@
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 
+.head-title {
+  padding: 10px 0;
+}
+
+/* menu icon */
+.menu-icon {
+  width: 23px;
+  height: 3px;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  padding: 5px 0;
+  background-clip: content-box;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 12px;
+  right: 10px;
+}
+
+.menu-container {
+  position: absolute;
+  width: 25%;
+  right: 0;
+  padding-left: 10px;
+}
+
+.menu-container:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid lightblue;
+  position: absolute;
+  right: 5px;
+  top: -14px;
+}
+
+.menu-item {
+  padding: 10px;
+}
 
 @media only screen and (min-width: 481px) {
 
