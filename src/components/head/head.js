@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './head.css';
-import '../../share.css';
+import '../../config.js';
 
 export default class Head extends Component {
   constructor () {
@@ -19,15 +19,16 @@ export default class Head extends Component {
 
   render() {
     const { showMenu } = this.state;
+    const { mobile } = global.browser.versions
 
     return(
-      <header className='text-white background-lightblue'>
-        <div className='head-title text-center'>hello 宠回家</div>
+      <header>
+        <div className='head-title'>hello 宠回家</div>
         <nav>
-          <div className='menu-icon menu-btn background-white' onClick={ this.toggleShowMenu }></div>
-          { showMenu ?
+          <div className='menu-icon menu-btn' onClick={ this.toggleShowMenu }></div>
+          { ( showMenu || !mobile ) ?
             (
-              <ul className='menu-container display-flex flex-wrap background-lightblue'>
+              <ul className='menu-container'>
                 <li className='menu-item'>首页</li>
                 <li className='menu-item'>领养信息</li>
                 <li className='menu-item'>领养要求</li>
