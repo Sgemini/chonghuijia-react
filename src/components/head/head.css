@@ -71,6 +71,10 @@ header{
     background-color: white;
   }
 
+  .menu-container:before {
+    display: none;
+  }
+
   .menu-item {
     min-width: 100px;
   }
