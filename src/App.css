@@ -6,3 +6,7 @@
   display: inline-flex;
   flex-wrap: wrap;
 }
+
+.images--homepage {
+  width: 100%;
+}

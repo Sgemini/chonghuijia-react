@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Card from './components/cards/card.js';
 import Head from './components/head/head.js';
+import HomePageImage from './images/take_me_home.jpeg';
 
 class App extends Component {
   constructor() {
@@ -32,6 +33,7 @@ class App extends Component {
     return (
       <div className='come-home'>
         <Head />
+        <img src={HomePageImage} className='images--homepage' alt='take-me-home' />
         <div className='animal-cards'>
           {
             this.state.animals.map(function(animal) {
