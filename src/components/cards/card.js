@@ -12,7 +12,7 @@ export default class Card extends Component {
 
     return(
       <div className='card'>
-        <img className='card-image' alt={ animal.name } src={ logo }/>
+        <img className='card-image' alt={ animal.name } src={ animal.cover_url || logo }/>
         <div className='card-name'>{ animal.name }</div>
         <div className='card-information'>
           <span className='size'>{animal.size}</span>
