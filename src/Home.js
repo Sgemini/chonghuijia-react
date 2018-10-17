@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './Home.css';
 import Card from './components/cards/card.js';
 import Head from './components/head/head.js';
 import HomePageImage from './images/take_me_home.jpeg';
@@ -29,6 +29,7 @@ class App extends Component {
       console.log(error)
     });
   }
+
   render() {
     return (
       <div className='come-home'>

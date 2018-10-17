@@ -4,6 +4,7 @@
   border: 1px solid black;
   margin-bottom: 20px;
   text-align: center;
+  display: block;
 }
 
 .card-image {
