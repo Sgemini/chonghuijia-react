@@ -29,10 +29,10 @@ export default class Head extends Component {
           { ( showMenu || !mobile ) ?
             (
               <ul className='menu-container'>
-                <li className='menu-item'>首页</li>
-                <li className='menu-item'>领养信息</li>
-                <li className='menu-item'>领养要求</li>
-                <li className='menu-item'>关于我们</li>
+                <li className='menu-item'><a href='/'>首页</a></li>
+                <li className='menu-item'><a href='/animals'>领养信息</a></li>
+                <li className='menu-item'><a href='/adoption-tips'>领养要求</a></li>
+                <li className='menu-item'><a href='/about'>关于我们</a></li>
               </ul>
             ) : null
           }
