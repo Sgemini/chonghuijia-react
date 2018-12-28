@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './head.css';
+import '../../app.css';
 import '../../config.js';
 
 export default class Head extends Component {
@@ -23,19 +24,23 @@ export default class Head extends Component {
 
     return(
       <header>
-        <div className='head-title'>hello 宠回家</div>
+        <div className='header--title'>hello 宠回家</div>
         <nav>
-          <div className='menu-icon menu-btn' onClick={ this.toggleShowMenu }></div>
-          { ( showMenu || !mobile ) ?
-            (
-              <ul className='menu-container'>
-                <li className='menu-item'><a href='/'>首页</a></li>
-                <li className='menu-item'><a href='/animals'>领养信息</a></li>
-                <li className='menu-item'><a href='/adoption-tips'>领养要求</a></li>
-                <li className='menu-item'><a href='/about'>关于我们</a></li>
-              </ul>
-            ) : null
-          }
+          <div className='menu-icon mobile-only header--nav---btn' onClick={ this.toggleShowMenu }></div>
+          <ul className='header--menu---list' style={{ display: !mobile || showMenu ? 'flex' : 'none' }}>
+            <li className='header--menu---item'>
+              <a href='/'>首页</a>
+            </li>
+            <li className='header--menu---item'>
+              <a href='/'>领养信息</a>
+            </li>
+            <li className='header--menu---item'>
+              <a href='/'>领养要求</a>
+            </li>
+            <li className='header--menu---item'>
+              <a href='/'>关于我们</a>
+            </li>
+          </ul>
         </nav>
       </header>
     )
