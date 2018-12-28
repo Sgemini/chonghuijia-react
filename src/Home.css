@@ -1,12 +1,12 @@
 .come-home {
-  padding: 0 20px;
+    padding: 0 20px;
 }
 
 .animal-cards {
-  display: inline-flex;
-  flex-wrap: wrap;
+    display: inline-flex;
+    flex-wrap: wrap;
 }
 
 .images--homepage {
-  width: 100%;
+    width: 100%;
 }

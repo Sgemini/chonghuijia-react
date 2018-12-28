@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import './Home.css';
+import './home.css';
+import './app.css';
 import Card from './components/cards/card.js';
 import Head from './components/head/head.js';
 import HomePageImage from './images/take_me_home.jpeg';
 
-class App extends Component {
+export default class Home extends Component {
   constructor() {
     super();
     this.state = {
@@ -18,15 +19,15 @@ class App extends Component {
   }
 
   fetchAllAnimals () {
-    let _this = this
-    fetch('https://chonghuijia-api.herokuapp.com/animals').then(function(res){
+    let _this = this;
+    fetch('http://localhost:4000/animals').then(function(res){
       return res.json();
     }).then(function(res){
       _this.setState({
         animals: res.animals
       })
     }).catch(function(error) {
-      console.log(error)
+      console.log(error);
     });
   }
 
@@ -48,5 +49,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;

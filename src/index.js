@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -28,5 +29,5 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Home />, document.getElementById('root'));
 registerServiceWorker();
