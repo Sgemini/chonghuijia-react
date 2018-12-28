@@ -7,29 +7,19 @@ header{
   color: white;
 }
 
-.head-title {
+.header--title {
   padding: 10px 0;
   text-align: center;
 }
 
-/* menu icon */
-.menu-icon {
-  width: 23px;
-  height: 3px;
-  border-top: 3px solid white;
-  border-bottom: 3px solid white;
-  padding: 5px 0;
-  background-clip: content-box;
-}
-
-.menu-btn {
+.header--nav---btn {
   position: fixed;
   top: 12px;
   right: 10px;
   background-color: white;
 }
 
-.menu-container {
+.header--menu---list {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
@@ -40,7 +30,8 @@ header{
   list-style: none;
 }
 
-.menu-container:before {
+.header--menu---list:before {
+  /* Triangle */
   content: '';
   width: 0;
   height: 0;
@@ -52,18 +43,18 @@ header{
   top: -14px;
 }
 
-.menu-item {
+.header--menu---item {
   padding: 10px;
 }
 
-@media only screen and (min-width: 481px) {
+@media(min-width: 768px) {
   header {
     position: unset;
     background-color: white;
     color: black;
   }
 
-  .menu-container {
+  .header--menu---list {
     position: unset;
     width: 100%;
     text-align: center;
@@ -71,15 +62,15 @@ header{
     background-color: white;
   }
 
-  .menu-container:before {
+  .header--menu---list:before {
     display: none;
   }
 
-  .menu-item {
+  .header--menu---item {
     min-width: 100px;
   }
 
-  .head-title {
+  .header--title {
     font-size: 24px;
   }
 }
