@@ -19,7 +19,7 @@ export default class Home extends Component {
   }
 
   fetchAllAnimals () {
-    let _this = this
+    let _this = this;
     fetch('http://localhost:4000/animals').then(function(res){
       return res.json();
     }).then(function(res){
@@ -27,7 +27,7 @@ export default class Home extends Component {
         animals: res.animals
       })
     }).catch(function(error) {
-      console.log(error)
+      console.log(error);
     });
   }
 

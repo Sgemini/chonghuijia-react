@@ -1,36 +1,35 @@
 /* icons */
 .menu-icon {
-    width: 23px;
-    height: 3px;
-    border-top: 3px solid white;
-    border-bottom: 3px solid white;
-    padding: 5px 0;
-    background-clip: content-box;
+  width: 23px;
+  height: 3px;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  padding: 5px 0;
+  background-clip: content-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* desktop */
+@media(min-width: 768px) {
+  .mobile-only {
+    display: none !important;
   }
-  
-  a {
-    text-decoration: none;
+
+  .desktop-only {
+    display: block !important;
   }
-  
-  /* desktop */
-  @media(min-width: 768px) {
-    .mobile-only {
-      display: none !important;
-    }
-  
-    .desktop-only {
-      display: block !important;
-    }
+}
+
+/* mobile */
+@media(max-width: 768px) {
+  .mobile-only {
+    display: block !important;
   }
-  
-  /* mobile */
-  @media(max-width: 768px) {
-    .mobile-only {
-      display: block !important;
-    }
-  
-    .desktop-only {
-      display: none !important;
-    }
+
+  .desktop-only {
+    display: none !important;
   }
-  
+}
