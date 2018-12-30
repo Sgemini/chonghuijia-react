@@ -2,10 +2,13 @@
     padding: 0 20px;
 }
 
-.animal-cards {
-    display: inline-flex;
-    flex-wrap: wrap;
+@media (min-width: 780px) {
+    .animal-cards {
+        column-count: 3;
+        column-gap: 10;
+    }
 }
+
 
 .images--homepage {
     width: 100%;
