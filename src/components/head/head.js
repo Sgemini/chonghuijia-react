@@ -32,13 +32,13 @@ export default class Head extends Component {
               <a href='/'>首页</a>
             </li>
             <li className='header--menu---item'>
-              <a href='/'>领养信息</a>
+              <a href='/animals'>领养信息</a>
             </li>
             <li className='header--menu---item'>
-              <a href='/'>领养要求</a>
+              <a href='/adoption-tips'>领养要求</a>
             </li>
             <li className='header--menu---item'>
-              <a href='/'>关于我们</a>
+              <a href='/about'>关于我们</a>
             </li>
           </ul>
         </nav>
