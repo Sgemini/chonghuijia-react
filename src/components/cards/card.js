@@ -21,7 +21,12 @@ import Dina from '../../images/癫那.jpg';
 import 肥肥 from '../../images/肥肥.jpeg';
 import 路易 from '../../images/路易.jpeg';
 import 黑仔 from '../../images/黑仔.jpeg';
-
+import 歪利 from '../../images/歪利.jpeg';
+import goodboy from '../../images/goodboy.jpeg';
+import Benz from '../../images/Benz.jpeg';
+import 小黑 from '../../images/小黑.jpeg';
+import 旺财 from '../../images/旺财.jpeg';
+import 贝贝 from '../../images/贝贝.jpeg';
 
 const defaultProps = {
   animal: {}
@@ -72,12 +77,21 @@ export default class Card extends Component {
         return(<img className='card-image' alt={ name } src={ 路易 || logo }/>);
       case '黑仔':
         return(<img className='card-image' alt={ name } src={ 黑仔 || logo }/>);
+      case '歪利':
+        return(<img className='card-image' alt={ name } src={ 歪利 || logo }/>);
+      case 'Good Boy':
+        return(<img className='card-image' alt={ name } src={ goodboy || logo }/>);
+      case 'Benz':
+        return(<img className='card-image' alt={ name } src={ Benz || logo }/>);
+      case '小黑':
+        return(<img className='card-image' alt={ name } src={ 小黑 || logo }/>);
+      case '旺财':
+        return(<img className='card-image' alt={ name } src={ 旺财 || logo }/>);
+      case '贝贝':
+        return(<img className='card-image' alt={ name } src={ 贝贝 || logo }/>);
       default:
         return(<img className='card-image' alt={ '宠回家' } src={ logo }/>);        
     }
-
-    // let imgSrc = eval(name) || logo
-    // return(<img className='card-image' alt={ name || '宠回家' } src={ imgSrc }/>)
   }
 
   render() {
