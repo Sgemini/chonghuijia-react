@@ -1,4 +1,4 @@
-/* icons */
+/* menu icon */
 .menu-icon {
   width: 23px;
   height: 3px;
@@ -6,6 +6,48 @@
   border-bottom: 3px solid white;
   padding: 5px 0;
   background-clip: content-box;
+  background-color: #fff;
+}
+
+/* search icon */
+
+.search-icon:before {
+  content: ' ';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+}
+
+.search-icon:after {
+  content: ' ';
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px 0 0 5px;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+.search-icon:before {
+  top: 0;
+  left: 0;
+}
+.search-icon:after {
+  right: -33px;
+  bottom: -27px;
+}
+
+/* close btn */
+
+.close-btn {
+  font-size: 28px;
+  color: white;
 }
 
 /* common style */

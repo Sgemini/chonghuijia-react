@@ -7,6 +7,16 @@ header{
   color: white;
 }
 
+.header--search-container {
+  position: fixed;
+  top: 6px;
+  left: 10px;
+}
+
+.header--search-container---search-icon {
+  position: relative;
+}
+
 .header--title {
   padding: 10px 0;
   text-align: center;
@@ -16,7 +26,6 @@ header{
   position: fixed;
   top: 12px;
   right: 10px;
-  background-color: white;
 }
 
 .header--menu---list {
@@ -45,6 +54,12 @@ header{
 
 .header--menu---item {
   padding: 10px;
+}
+
+.header--close-btn {
+  position: fixed;
+  top: 0;
+  right: 10px;
 }
 
 @media(min-width: 768px) {
