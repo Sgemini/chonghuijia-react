@@ -17,7 +17,7 @@ export default class Head extends Component {
 
   static defaultProps = {
     headTitle: 'hello 宠回家',
-    showSearch: true,
+    showSearchIcon: false,
   }
 
   toggleMenu = () => {
@@ -75,14 +75,18 @@ export default class Head extends Component {
 
   render() {
     const { isPopup, showSearchPopup } = this.state;    
-    const { headTitle, showSearch } = this.props;
+    const { headTitle, showSearchIcon } = this.props;
 
     return(
       <Fragment>
         <header>
-          <div className='search-icon mobile-only header--search-container' onClick={ this.showSearchPopup }>
-            <span className='search-icon header--search-container---search-icon'></span>
-          </div>
+          { 
+            showSearchIcon ? 
+            <div className='search-icon mobile-only header--search-container' onClick={ this.showSearchPopup } >
+              <span className='search-icon header--search-container---search-icon'></span>
+            </div>
+            : null
+          }
           <div className='header--title'>{ headTitle }</div>
           { isPopup ? this.popupCloseBtn() : this.headMenu() }
         </header>

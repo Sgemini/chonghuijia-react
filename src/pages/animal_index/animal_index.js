@@ -35,7 +35,7 @@ export default class AnimalIndex extends Component {
     const { animals } = this.state;
     return(
       <div>
-        <Head />
+        <Head showSearchIcon={true}/>
         <div className='animal-cards'>
           {
             animals.map(function(animal) {
