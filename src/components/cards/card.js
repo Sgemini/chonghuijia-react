@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './card.css';
-import logo from '../../images/logo.jpeg';
+import logo from '../../images/logo.png';
 // import { Link } from 'react-router-dom';
 
-import 单单 from '../../images/单单.jpg';
+import 单单 from '../../images/单单.png';
 import nono from '../../images/nono.jpeg';
 import 丁香 from '../../images/丁香.jpeg';
 import tiger from '../../images/tiger.jpeg';

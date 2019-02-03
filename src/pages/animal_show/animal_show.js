@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import logo from '../../images/logo.jpeg';
+import logo from '../../images/logo.png';
 import Head from '../../components/head/head.js';
 
 import './animal_show.css';
