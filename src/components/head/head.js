@@ -90,7 +90,7 @@ export default class Head extends Component {
           <div className='header--title'>{ headTitle }</div>
           { isPopup ? this.popupCloseBtn() : this.headMenu() }
         </header>
-        { showSearchPopup ? <Popup /> : null }
+        { showSearchPopup ? <Popup popupType='search' /> : null }
       </Fragment>
     )
   }

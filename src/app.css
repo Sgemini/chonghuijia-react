@@ -61,6 +61,18 @@ ul {
   padding: 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
 /* desktop */
 @media(min-width: 768px) {
   .mobile-only {
