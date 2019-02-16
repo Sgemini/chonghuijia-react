@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './card.css';
-import logo from '../../images/logo.png';
 // import { Link } from 'react-router-dom';
 
 import 单单 from '../../images/单单.png';
@@ -40,6 +39,7 @@ export default class Card extends Component {
   }
 
   renderAnimalPicture(name) {
+    let logo = 'https://chonghuijia-api.herokuapp.com/logo.png';
     switch(name) {
       case '单单':
         return(<img className='card-image' alt={ name } src={ 单单 || logo }/>);
@@ -90,7 +90,7 @@ export default class Card extends Component {
       case '贝贝':
         return(<img className='card-image' alt={ name } src={ 贝贝 || logo }/>);
       default:
-        return(<img className='card-image' alt={ '宠回家' } src={ logo }/>);        
+        return(<img className='card-image' alt={ '宠回家' } src={ logo }/>);
     }
   }
 
